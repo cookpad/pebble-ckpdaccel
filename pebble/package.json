@@ -1,12 +1,12 @@
 {
   "name": "ckpdaccel",
-  "author": "MakeAwesomeHappen",
+  "author": "David Stosik",
   "version": "1.0.0",
   "keywords": ["pebble-app"],
   "private": true,
   "dependencies": {},
   "pebble": {
-    "displayName": "ckpdaccel",
+    "displayName": "Cookpad Accelerometer",
     "uuid": "fb733e99-ea89-44ed-81c3-3b5f6e2aa9ca",
     "sdkVersion": "3",
     "enableMultiJS": true,
@@ -23,7 +23,14 @@
       "dummy"
     ],
     "resources": {
-      "media": []
+      "media": [
+        {
+          "file": "images/menu_icon.png",
+          "menuIcon": true,
+          "name": "IMAGE_MENU_ICON",
+          "type": "png"
+        }
+      ]
     }
   }
 }
