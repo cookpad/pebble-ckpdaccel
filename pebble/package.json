@@ -28,7 +28,11 @@
       "watchface": false
     },
     "messageKeys": [
-      "dummy"
+      "endpoint",
+      "identifier",
+      "accelerometer_rate",
+      "accelerometer_samples",
+      "debug"
     ],
     "resources": {
       "media": [
@@ -36,6 +40,21 @@
           "file": "images/menu_icon.png",
           "menuIcon": true,
           "name": "IMAGE_MENU_ICON",
+          "type": "png"
+        },
+        {
+          "file": "images/music_icon_play.png",
+          "name": "IMAGE_MUSIC_ICON_PLAY",
+          "type": "png"
+        },
+        {
+          "file": "images/music_icon_pause.png",
+          "name": "IMAGE_MUSIC_ICON_PAUSE",
+          "type": "png"
+        },
+        {
+          "file": "images/floppy.png",
+          "name": "IMAGE_FLOPPY",
           "type": "png"
         }
       ]

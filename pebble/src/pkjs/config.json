@@ -2,5 +2,99 @@
   {
     "type": "heading",
     "defaultValue": "Cookpad Cooking Accelerometer"
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Main settings"
+      },
+      {
+        "type": "input",
+        "messageKey": "identifier",
+        "defaultValue": "left_wrist",
+        "label": "Watch identifier",
+        "description": "An identifier attached to the endpoints when sent to the API. You can use it to label left and right wrists for example."
+      },
+      {
+        "type": "input",
+        "messageKey": "endpoint",
+        "defaultValue": "http://example.com:3000",
+        "label": "API endpoint",
+        "description": "An HTTP POST endpoint URL to which datapoints will be sent."
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Accelerometer"
+      },
+      {
+        "type": "text",
+        "defaultValue": "Here you can set the rate at which accelerometer events are measured, and sent to the server."
+      },
+      {
+        "type": "select",
+        "messageKey": "accelerometer_rate",
+        "defaultValue": 100,
+        "label": "Rate (Hz)",
+        "description": "The rate accelerometer data points are generated in hertz.",
+        "options": [
+          {
+            "label": "10",
+            "value": 10
+          },
+          {
+            "label": "25",
+            "value": 25
+          },
+          {
+            "label": "50",
+            "value": 50
+          },
+          {
+            "label": "100",
+            "value": 100
+          }
+        ]
+      },
+      {
+        "type": "slider",
+        "messageKey": "accelerometer_samples",
+        "defaultValue": 25,
+        "label": "Samples",
+        "min": 1,
+        "max": 25,
+        "description": "The number of accelerometer data points to accumulate in a batch before calling the event handler."
+      },
+      {
+        "type": "text",
+        "defaultValue": "<strong>Important</strong>: If you configure the accelerometer to send many data events, you will overload the bluetooth connection. It is recommended that you send at most 5 events per second."
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Advanced"
+      },
+      {
+        "type": "toggle",
+        "messageKey": "debug",
+        "defaultValue": false,
+        "label": "Debug mode",
+        "description": "Log more stuff. This could overload the Bluetooth connection, so you should disable it when recording data."
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save"
   }
 ]
