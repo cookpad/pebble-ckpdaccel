@@ -2,9 +2,13 @@
   "name": "ckpdaccel",
   "author": "David Stosik",
   "version": "1.0.0",
-  "keywords": ["pebble-app"],
+  "keywords": [
+    "pebble-app"
+  ],
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "pebblejs": "^1.0.0"
+  },
   "pebble": {
     "displayName": "Cookpad Accelerometer",
     "uuid": "fb733e99-ea89-44ed-81c3-3b5f6e2aa9ca",
