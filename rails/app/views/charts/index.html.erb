@@ -1,0 +1,13 @@
+<% if @watches.empty? %>
+  Sorry, there is no data in the specified interval.
+<% end %>
+
+<% @watches.each do |watch| %>
+  <h2><%= watch %></h2>
+
+  <%= line_chart(
+    @datasets[watch],
+    points: false,
+    label: watch
+  ) %>
+<% end %>
