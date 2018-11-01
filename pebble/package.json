@@ -7,6 +7,7 @@
   ],
   "private": true,
   "dependencies": {
+    "pebble-clay": "^1.0.4",
     "pebblejs": "^1.0.0"
   },
   "pebble": {
@@ -19,6 +20,9 @@
       "basalt",
       "chalk",
       "diorite"
+    ],
+    "capabilities": [
+      "configurable"
     ],
     "watchapp": {
       "watchface": false
