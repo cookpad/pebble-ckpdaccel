@@ -1,0 +1,2 @@
+class AccelerometerDataPoint < ApplicationRecord
+end
