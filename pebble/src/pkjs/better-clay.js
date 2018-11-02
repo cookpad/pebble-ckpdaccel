@@ -1,6 +1,9 @@
 var Clay = require('pebble-clay');
 
-Clay.prototype.getDefaults = function(localConfig, defaults = {}) {
+Clay.prototype.getDefaults = function(localConfig, defaults) {
+  if (typeof(defaults) == 'undefined' || !defaults) {
+    defaults = {};
+  }
   var self = this;
   if (typeof(localConfig) == 'undefined') {
     localConfig = self.config;
@@ -20,10 +23,10 @@ Clay.prototype.originalGetSettings = Clay.prototype.getSettings;
 
 Clay.prototype.getSettings = function(response, convert) {
   if (typeof(response) == 'undefined') {
-    return this.originalGetSettings(response, convert);
+    return JSON.parse(localStorage.getItem('clay-settings')) || this.getDefaults();
   }
 
-  return JSON.parse(localStorage.getItem('clay-settings')) || this.getDefaults();
+  return this.originalGetSettings(response, convert);
 };
 
 module.exports = Clay;

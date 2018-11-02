@@ -1,5 +1,5 @@
 require('pebblejs');
-var Clay = require('./better-clay')
+var Clay = require('./better-clay');
 var UI = require('pebblejs/ui');
 var Vector2 = require('pebblejs/lib/vector2');
 var Accel = require('pebblejs/ui/accel');
