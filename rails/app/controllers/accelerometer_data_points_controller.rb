@@ -9,7 +9,7 @@ class AccelerometerDataPointsController < ApplicationController
         y: accel["y"],
         z: accel["z"],
         vibe: accel["vibe"] != 0,
-        milliseconds: accel["time"]
+        measured_at: Time.strptime(accel["time"].to_s, "%Q")
       )
     end
     render json: { result: "ok" }

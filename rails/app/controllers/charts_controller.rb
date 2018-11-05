@@ -7,7 +7,7 @@ class ChartsController < ApplicationController
         %w(x y z).map do |axis|
           {
             name: axis,
-            data: base_query.where(watch_id: watch).pluck(:milliseconds, axis)
+            data: base_query.where(watch_id: watch).pluck(:measured_at, axis)
           }
         end
       ]

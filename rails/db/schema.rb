@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_31_175135) do
+ActiveRecord::Schema.define(version: 2018_11_03_235347) do
 
   create_table "accelerometer_data_points", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "watch_id"
@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2018_10_31_175135) do
     t.integer "y"
     t.integer "z"
     t.boolean "vibe"
-    t.bigint "milliseconds"
+    t.datetime "measured_at", precision: 3
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
