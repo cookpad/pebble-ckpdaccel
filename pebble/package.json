@@ -8,7 +8,7 @@
   "private": true,
   "dependencies": {
     "pebble-clay": "^1.0.4",
-    "pebblejs": "^1.0.0"
+    "pebblejs": "davidstosik/pebblejs#devel-fix-accel-data-time"
   },
   "pebble": {
     "displayName": "Cookpad Accelerometer",
