@@ -1,5 +1,8 @@
 # Cookpad Cooking Accelerometer
 
+> **Warning:** This project is effectively unmaintained. It may or may not work.
+> Any use is at your own risk.
+
 ## Purpose
 
 This is an experimental application that allows easy collecting of accelerometer
